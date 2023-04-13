@@ -28,19 +28,19 @@
                 <div class="form-group offset-md-3">
                     <div class="col-md-6">
                         <label for="">Assunto do problema: </label>
-                        <input type="text" name="name_prod" id="" class="form-control" value=<?php echo $rowTable[0]['name_prod']?>>
+                        <input type="text" name="assunto" id="" class="form-control" value=<?php echo $rowTable[0]['assunto']?>>
                     </div>
                 </div>
                 <div class="form-group offset-md-3">
                     <div class="col-md-6">
                         <label for="">Nome de usuário: </label>
-                        <input type="text" name="qtd_prod" id="" class="form-control" value=<?php echo $rowTable[0]['qtd_prod']?>>
+                        <input type="text" name="nomecompleto" id="" class="form-control" value=<?php echo $rowTable[0]['nomecompleto']?>>
                     </div>
                 </div>
                 <div class="form-group offset-md-3">
                     <div class="col-md-6">
                         <label for="">Descrição do problema: </label>
-                        <input type="text" name="valor_prod" id="" class="form-control" value=<?php echo $rowTable[0]['valor_prod']?>>
+                        <input type="text" name="descricao" id="" class="form-control" value=<?php echo $rowTable[0]['descricao']?>>
                     </div>
                 </div>
                 <div class="form-group offset-md-3">

@@ -13,6 +13,8 @@
         <label for="">Senha</label>
         <input type="password" name="senha" id="">
         <input type="submit" value="Login">
+        </div>
+        <a href="cadastrar.php" type="button" class="btn btn-primary float-center">Cadastrar</a>
     </form>
 </body>
 </html>

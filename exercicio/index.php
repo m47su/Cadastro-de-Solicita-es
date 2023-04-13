@@ -13,19 +13,19 @@
                 <div class="form-group offset-md-3">
                     <div class="col-md-6">
                         <label for="">Assunto do problema: </label>
-                        <input type="text" name="name_prod" id="" class="form-control">
+                        <input type="text" name="assunto" id="" class="form-control">
                     </div>
                 </div>
                 <div class="form-group offset-md-3">
                     <div class="col-md-6">
                         <label for="">Seu nome completo: </label>
-                        <input type="text" name="qtd_prod" id="" class="form-control">
+                        <input type="text" name="nomecompleto" id="" class="form-control">
                     </div>
                 </div>
                 <div class="form-group offset-md-3">
                     <div class="col-md-6">
                         <label for="">Descrição do problema: </label>
-                        <input type="text" name="valor_prod" id="" class="form-control">
+                        <input type="text" name="descricao" id="" class="form-control">
                     </div>
                 </div>
                 <div class="form-group offset-md-3">

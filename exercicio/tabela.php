@@ -2,7 +2,7 @@
     require("protected.php");
     require("conn.php");
 
-    $tabela = $pdo->prepare("SELECT id_produto, name_prod, qtd_prod, valor_prod
+    $tabela = $pdo->prepare("SELECT id_produto, assunto, nomecompleto, descricao
     FROM produtos;");
     $tabela->execute();
     $rowTabela = $tabela->fetchAll();
@@ -43,9 +43,9 @@
             foreach ($rowTabela as $linha){
                 echo '<tr>';
                 echo "<th scope='row'>".$linha['id_produto']."</th>";
-                echo "<td>".$linha['name_prod']."</td>";
-                echo "<td>".$linha['qtd_prod']."</td>";
-                echo "<td>".$linha['valor_prod']."</td>";
+                echo "<td>".$linha['assunto']."</td>";
+                echo "<td>".$linha['nomecompleto']."</td>";
+                echo "<td>".$linha['descricao']."</td>";
                 echo '<td><a href=edit_tabela.php?produto='.$linha['id_produto'].' class="btn btn-warning">Editar</a></td>';
                 echo '<td><a href=CRUD\del_prod.php?produto='.$linha['id_produto'].' class="btn btn-danger">Excluir</a></td>';
                 echo '</tr>';

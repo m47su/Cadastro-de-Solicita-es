@@ -1,20 +1,20 @@
 <?php
     require('../conn.php');
 
-    $name_prod = $_POST['name_prod'];
-    $qtd_prod = $_POST['qtd_prod'];
-    $valor_prod = $_POST['valor_prod'];
+    $assunto = $_POST['assunto'];
+    $nomecompleto = $_POST['nomecompleto'];
+    $descricao = $_POST['descricao'];
    
    
-    if(empty($name_prod) || empty($qtd_prod) || empty($valor_prod)){
+    if(empty($assunto) || empty($nomecompleto) || empty($descricao)){
         echo "Os valores não podem ser vazios";
     }else{
-        $cad_prod = $pdo->prepare("INSERT INTO produtos(name_prod, qtd_prod, valor_prod) 
-        VALUES(:name_prod, :qtd_prod, :valor_prod)");
+        $cad_prod = $pdo->prepare("INSERT INTO produtos(assunto, nomecompleto, descricao) 
+        VALUES(:assunto, :nomecompleto, :descricao)");
         $cad_prod->execute(array(
-            ':name_prod'=> $name_prod,
-            ':qtd_prod'=> $qtd_prod,
-            ':valor_prod'=> $valor_prod,
+            ':assunto'=> $assunto,
+            ':nomecompleto'=> $nomecompleto,
+            ':descricao'=> $descricao,
              
         ));
 
